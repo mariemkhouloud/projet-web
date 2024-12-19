@@ -1,0 +1,721 @@
+:root {
+  --heading-font: "Raleway",  sans-serif;/*pour les titre*/
+  --nav-font: "Poppins",  sans-serif;/*pour le menu de navigation*/
+}
+
+:root { 
+  --background-color: #ffffff; /* Couleur d'arrière-plan pour l'ensemble du site Web, y compris les sections*/
+  --heading-color: #050d18; /*Couleur pour les titres, les sous-titres sur tout le site Web*/
+  --accent-color: #149ddd; /*les boutons, liens,élément nécessitant d'attirer l'attention. */
+  --surface-color: #ffffff; /* couleur d'arrière-plan utilisée pour la section */
+  --default-color: #272829; /*contrast*/
+  --contrast-color: #ffffff; /* Contrast coulelur pour le text */
+}
+
+.light-background {
+  --background-color: #f4fafd;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #040b14;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}
+
+body {
+  color: #040b14;
+  background-color: #f4fafd;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 300px;
+}
+
+a {
+  color:  #149ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb,  #149ddd, transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: "Raleway",  sans-serif;
+  font-weight: bold;
+}
+
+/***************
+#iit
+******************/
+.testimonial-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.author-info h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.temoignages-image{
+  width: 1050px;
+}
+/*****************
+#  Header
+*****************/
+.section-title p{
+  font-weight:bold;
+}
+.header {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  position: fixed; /*fixe sur le côté gauche de l'écran*/ 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  width: 300px;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;/*permet de défiler le contenu si dépasse la hauteur de l'écran.*/
+}
+
+.header .profile-img img {
+  margin: 15px auto; /*limage centrer grace au margin et display*/
+  display: block;
+  width: 160px;
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.header .social-links {/*pour que les lien separer au continu suivant*/
+  margin: 0 0 20px 0;
+}
+
+.header .social-links a {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color:#ffffff;
+  border-radius: 50%;/*lapparition des lien aparrat souu forme du cercle*/
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
+
+.header .social-links a:hover {/*lorsque la souris sur les nom des page se transforme du blanc en bleu*/
+  color:#ffffff;
+  background:#149ddd;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+
+
+.navmenu ul {
+  list-style: none;/*je le fait pour cacher les points*/
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+  color: var(--nav-hover-color);
+}
+
+.navmenu a:hover .navicon,
+.navmenu .active .navicon,
+.navmenu .active:focus .navicon {
+  color: var(--accent-color);
+}
+
+.navmenu a, 
+.navmenu a:focus {/*avec la souris ou tab la navigation*/
+  color:#ffffff ;
+  padding: 15px 10px;
+  font-family: "Poppins",  sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex; /*display et align item garantissent un alignement vertical des icônes et du texte.*/
+  align-items: center;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.navmenu a .navicon,
+.navmenu a:focus .navicon {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/*----------------
+#  Footer
+-------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  padding: 40px 0;
+  justify-content: center;
+  position: relative;
+}
+
+
+.footer .credits {
+  margin-top: 4px;
+  font-size: 13px;
+  text-align: center;
+}
+
+
+.page-title {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 25px 0;
+  position: relative;
+}
+
+.page-title h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-title .breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-title .breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.page-title .breadcrumbs ol li+li::before {
+  content: "/";
+  display: inline-block;
+  padding-right: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+/*--------------------------------------------------------------
+#  Sections
+--------------------------------------------------------------*/
+section,/*qui cotient la contenu du page */ 
+.section {/*je suis en balise section on fait lape du classse section*/
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background:  #149ddd;
+  left: 0;
+  bottom: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*mariem Section*/
+
+
+.mariem {
+  width: 100%;
+  height: 700px;
+  /*relative je veus utlise les px et la position par rapport loriginal occupe lespace*/
+  position: relative;
+  padding: 80px;
+  
+}
+
+.mariem img {
+    /*relative je veus utlise les % et la position para rapport au parent*/
+  position: absolute;
+  inset: 0;/* remplace les propriétés top, right, bottom et left la distance de l'image par rapport aux bords de son conteneur*/
+  width: 100%;
+  height: 100%;
+  
+}
+.mariem .container {
+  position: absolute;
+}
+
+.mariem h2 {
+  padding: 30px;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 100;
+}
+
+.mariem p {
+  padding: 30px;
+  margin: 10px 0 0 0;
+  font-size: 26px;
+}
+
+/* apropos Section*/
+
+
+.a propos .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.apropos .content ul {
+  list-style: none;/*pour que les point ne s'apparait pas*/
+  margin: 20px;
+}
+
+.apropos .content ul li {
+  margin-bottom: 50px;
+}
+
+/*--------------------------------------------------------------
+# competences Section
+--------------------------------------------------------------*/
+
+
+.competences .progress .competence {/*pour nom de competence*/
+  color: var(--heading-color);/*noir*/
+  margin-bottom: 6px ;
+  text-transform: uppercase;
+  font-weight: 1000;/*en gras*/
+  font-family: "Raleway",  sans-serif;/*le style decriture*/
+}
+.competences .progress {
+  height: 60px;/*hauteur de lelement progress 60px*/
+  display: block;/*occupe toute la largeur et pour fair le retour a laligne pour les competence*/
+  background: none;/*le backgroun du progresse souvent il est gris don je veux pa lafficher */
+}
+.competences .progress-bar {
+  height: 10px;
+  background-color:  #149ddd;
+}
+
+.compim {
+  margin: 0px auto; /* Centrage global */
+}
+/* Style des images */
+.compim img{
+  padding: 40px;
+  width: 160px; 
+  height: 160px; 
+}
+
+
+
+/*********************************************************
+#portfolio
+***********************************************************/
+.portfolio .portfolio-content {
+  position: relative;/**/
+  overflow: hidden;/*se fait pour le masqua pour apparaitre dans ces limite */
+  transition: transform 0.3s ease-in-out; /* Animation lors d'une transformation */
+
+}
+
+.portfolio .portfolio-content img {
+  width: 500px;
+  height: 300px; /* Hauteur fixe */
+  border-radius: 50px; /* Optionnel : arrondir les coins */
+  padding: 40px;
+}
+
+.portfolio .portfolio-content .portfolio-info {
+  opacity: 0;/*ne saffiche pa le masquage */
+  position: absolute;/*position enfant  parapporrt au element parent*/
+  inset: 0;/*ce qu'il remplisse complètement son parent */
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio .portfolio-content .portfolio-info h4 {/*pour */
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #ffffff;/*couleur de texte */
+  display: inline-block;/*avoir des dimensions spécifiques pour le largeur et le hauteur */
+  background-color: rgb(0, 225, 255);
+  border-radius: 30%;
+}
+.container p{  font-weight: 700;
+}
+
+.portfolio .portfolio-content .portfolio-info p {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
+  position: absolute;/*position parappot au child*/
+  left: calc(50% - 40px);/*pour le zoom apparaitre au center */
+  top: calc(50% - 14px);/*pour le zoom apparaitre au center */
+  font-size: 26px;
+  color: #fff;
+  transition: 0.3s;
+  line-height: 1.2;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+/********
+# Resume 
+********/
+.resume .resume-title {
+  color: var(--heading-color);
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+ 
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid  #149ddd;/*je fait la ligne a geuche*/
+  position: relative;
+}
+.resume .resume-item ul li {
+  font-weight: 700;
+
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);/* une moderne methode Mélange 80% de la couleur définie dans --default-color avec 20% de transparence.*/
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item::before {/*cercle décoratif à gauche de chaque élément ayant la classe resume-item*/
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: var(--background-color);
+  border: 2px solid var(--accent-color);
+  
+}
+
+
+/************
+#passion
+**************/
+.passion .passion-content {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out; /* Animation lors d'une transformation */
+
+}
+
+.passion .passion-content img {
+  width: 100%;
+  height: 500px; /* Hauteur fixe */
+  object-fit: cover; /* Coupe l'image pour qu'elle remplisse l'espace défini */
+  border-radius: 8px; /* Optionnel : arrondir les coins */
+}
+
+.passion .passion-content .passion-info {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+}
+
+.passion .passion-content .passion-info h4 {
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  background-color:rgb(0, 204, 255);
+}
+
+.passion .passion-content .passion-info p {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  display: inline-block;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.passion .passion-content .passion-info .preview-link {
+  position: absolute;/*position parappot au child*/
+  left: calc(50% - 40px);/*pour le zoom apparaitre au center */
+  top: calc(50% - 14px);/*pour le zoom apparaitre au center */
+  font-size: 26px;
+  color: #fff;
+  transition: 0.3s;
+  line-height: 1.2;
+}
+
+.passion .passion-content:hover .passion-info {
+  opacity: 1;
+}
+
+.passion .passion-content:hover img {
+  transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+/*-------------------
+# quiz Section
+----------------------
+/* Lien */
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Section du quiz */
+.question {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.question p {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Style des réponses */
+label {
+  font-size: 1.1em;
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #000000;
+}
+
+/* Bouton */
+button {
+  background-color:gray;
+  color: white;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+}
+
+
+/* Résultat */
+#result {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Style du formulaire */
+form {
+  margin: 0;
+}
+
+/* Style pour les sections et les espaces */
+section {
+  margin-top: 30px;
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact h2{
+  padding: 20px;}
+.contact .section{
+  padding: 30px;
+  font-weight: 700;
+}
+.contact .info-wrap {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);/*en class infowrap du conteneur contact en faire u box shadow*/
+  padding: 30px;
+}
+
+.contact .info-item {
+  margin-bottom: 20px;/*entre info iteme e les autre info item*/
+}
+
+.contact .info-item h3 {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.contact .info-item p {
+  
+  font-size: 14px;
+}
+/*--------------------------------------------------------------
+# passion Details Section
+--------------------------------------------------------------*/
+.passion-details .passion-details-slider img {
+  width: 100%;
+}
+
+.passion-details .passion-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.passion-details .passion-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.passion-details .passion-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #149ddd;
+}
+
+.passion-details .passion-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.passion-details .passion-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.passion-details .passion-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.passion-details .passion-info ul li+li {
+  margin-top: 10px;
+}
+
+.passion-details .passion-description {
+  padding-top: 30px;
+}
+
+.passion-details .passion-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.passion-details .passion-description p {
+  padding: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+/*********/
+/**********/
+.iit1{
+  width: 35px; 
+  height: 35px;
+}

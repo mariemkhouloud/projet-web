@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>contact</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+
+   <!-- Favicons sont des petites icônes affichées dans L'onglet du navigateur. icon pour specifier que 
+   ce lien correspond a un favicon-->
+  <link href="img/mariem.jpeg" rel="icon">
+
+  
+  <!-- bootsanim CSS Files  avec bootstrap-->
+   <!--utiliser pour fournit un framework moderne Contient des styles 
+  prêts à l'emploi et des icones proveneant du bootstrap -->
+  <link href="bootsanim/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootsanim/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <!--Utilisé pour animer des éléments HTML lors du défilement de la page.-->
+  <link href="bootsanim/aos/aos.css" rel="stylesheet">
+    <!--Permet de créer des galeries d'images ou de vidéos-->
+  <link href="bootsanim/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <!--Créer des sliders modernes et responsives-->
+  <link href="bootsanim/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Lien CDN pour Bootstrap Icons -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+  <!--je fait cette header pour larboressence du page  et Applique
+    des styles flexbox pour organiser les éléments verticalement du fond sombre-->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <!--une icône "liste" (menu) de Bootstrap Icons cette icône 
+    sur les grands écrans (XL) et l'affiche uniquement sur les petits écrans (mobile ou tablette).-->
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <!--image de profile qui apparaitre rond-->
+      <img src="img/mariem.jpeg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="img/logo.png" alt=""> -->
+      <h1 class="sitename">Mariem Zouari</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html"><i class="bi bi-house navicon"></i>Accueil </a></li>
+        <li><a href="a propos.html"><i class="bi bi-person navicon"></i> à propos</a></li>
+        <li><a href="cv.html"><i class="bi bi-file-earmark-text navicon"></i> CV </a></li>
+        <li><a href="competences.html"><i class="bi bi-bar-chart navicon"></i> Compétences</a></li>
+        <li><a href="portfolio.html"class="active"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="passion.html"><i class="bi bi-gem navicon"></i> Passion</a></li>
+        <li><a href="quiz.html"><i class="bi bi-question-circle navicon"></i> Quiz</a></li>
+        <li><a href="iit.html"> <img src="img/logo IIT.png" alt="Icône"class="iit1">IIT</a></li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <section id="portfolio" class="portfolio section light-background">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>portfolio</h2>
+        <p >"Découvrez sur cette page mes certificats de stage, ainsi que mes diplômes de baccalauréat et de licence, témoins de mon parcours académique et professionnel."</p>
+
+        </div>
+  
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="200">
+  
+          <div class="col-lg-4   ">
+            <div class="portfolio-content ">
+              <img src="img/licence.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Certificat du licence</h4>
+                <p>certficat du  réussir du programme d'études</p>
+                <a href="img/licence.png" title=" argent 925" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 ">
+            <div class="portfolio-content ">
+              <img src="img/bac.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4> Certificat du baccalauréat</h4>
+                <p>la réussite à l'examen national du baccalauréat</p>
+                <a href="img/bac.png" title="argent 925"  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4  ">
+            <div class="portfolio-content ">
+              <img src="img/attestation.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Attestation de stage</h4>
+                <p>ctama</p>
+                <a href="img/attestation.png" title="attestation"  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+
+    </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>  <span>Mariem zouari</span></p>
+      </div>
+      <div class="credits">
+         <a href="https://www.instagram.com/zouari_bijoux/">page instagramme du notre passion</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- fichiers js -->
+  <script src="bootsanim/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="bootsanim/aos/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
